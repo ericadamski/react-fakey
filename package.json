@@ -1,6 +1,6 @@
 {
   "name": "react-fakey",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description":
     "A repo that allows you to create fake elements for loading-ish states",
   "main": "dist/index.js",

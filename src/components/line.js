@@ -8,7 +8,7 @@ const line = css`
 
 export const Line = styled.div`
   min-width: 1rem;
-  height: ${rem(8)};
+  height: ${rem(6)};
   background-color: ${colors.grey.normal};
   border-radius: ${rem(3)};
   ${line};
