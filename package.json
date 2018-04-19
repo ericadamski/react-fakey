@@ -1,0 +1,51 @@
+{
+  "name": "react-fakey",
+  "version": "1.0.0",
+  "description":
+    "A repo that allows you to create fake elements for loading-ish states",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepare": "yarn build",
+    "build": "rollup -c",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "keywords": ["react"],
+  "bugs": {
+    "url": "https://github.com/ericadamski/react-fakey/issues"
+  },
+  "repository": "git@github.com:ericadamski/react-fakey.git",
+  "author": "Eric Adamski <er.adamski@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@storybook/addon-actions": "^3.4.2",
+    "@storybook/addon-links": "^3.4.2",
+    "@storybook/addons": "^3.4.2",
+    "@storybook/react": "^3.4.2",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.4.3",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "jest": "^22.4.3",
+    "prettier": "^1.12.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-testing-library": "^2.1.1",
+    "regenerator-runtime": "^0.11.1",
+    "rollup": "^0.58.1",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-commonjs": "^9.1.0",
+    "rollup-plugin-json": "^2.3.0",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-uglify": "^3.0.0",
+    "storybook": "^1.0.0",
+    "styled-components": "^3.2.6"
+  },
+  "peerDependencies": {
+    "react": "^15.0.0 || ^16.0.0",
+    "styled-components": "^3.2.6"
+  }
+}

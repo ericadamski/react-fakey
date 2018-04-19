@@ -1,0 +1,3 @@
+export default function rem(pixel) {
+  return `${pixel / 16}rem`;
+}
