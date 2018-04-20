@@ -49,7 +49,7 @@ const T = ({ className, rows = 5, cols = 4 }) => (
 );
 
 const col = css`
-  height: 3rem;
+  height: ${rem(24)};
   margin: ${rem(8)} 0;
   border-radius: 0;
   display: flex;
@@ -76,7 +76,6 @@ const row = css`
 export const Table = styled(T)`
   display: flex;
   width: 100%;
-  border: ${rem(1)} solid ${colors.grey.normal};
   padding-left: 0;
   padding-right: 0;
 
@@ -99,6 +98,12 @@ export const Table = styled(T)`
     @media (max-width: 400px) {
       &:nth-last-child(n + 4) {
         display: none;
+      }
+    }
+
+    &:nth-child(n + 2) {
+      ${Column} {
+        justify-content: center;
       }
     }
 
