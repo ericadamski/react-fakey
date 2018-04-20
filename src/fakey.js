@@ -7,6 +7,7 @@ import { Input } from './components/input';
 import { List } from './components/list';
 import { Paragraph } from './components/paragraph';
 import { Textarea } from './components/textarea';
+import { Table } from './components/table';
 
 export default {
   Line,
@@ -18,4 +19,5 @@ export default {
   List,
   Paragraph,
   Textarea,
+  Table,
 };
