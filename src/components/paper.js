@@ -20,6 +20,9 @@ export const Paper = styled.div`
   box-sizing: border-box;
   background-color: #fff;
   border-radius: ${rem(2)};
-  padding: ${rem(8)};
   ${props => props.shape && shapes[props.shape]};
+
+  & > & {
+    padding: ${rem(8)};
+  }
 `;

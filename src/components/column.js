@@ -8,13 +8,13 @@ import rem from './utils/rem';
 import { Paper } from './paper';
 import { Line } from './line';
 
-const C = ({ className, count = 1, per = 3 }) => (
+const C = ({ className, count = 1, per = 3, minWidth = 40 }) => (
   <Paper className={className}>
     {range(0, count).map(i => (
       <Paper key={i}>
         {range(0, per).map(k => (
           <Paper key={`${i}.${k}`}>
-            <Line width={random()} />
+            <Line width={random(minWidth)} />
           </Paper>
         ))}
       </Paper>

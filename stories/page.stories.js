@@ -12,6 +12,7 @@ const Center = Paper.extend`
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 `;
 
 storiesOf('Page', module).add('Default', () => (
@@ -21,17 +22,17 @@ storiesOf('Page', module).add('Default', () => (
         <Image width={500} height={500} />
       </Center>
       <Paper>
-        <Header wrap words={1} size={2} />
+        <Header center wrap words={1} size={2} />
       </Paper>
       <Paragraph paragraphs={3} lines={5} />
       <Paper>
-        <Header wrap words={8} size={2} />
+        <Header center wrap words={8} size={2} />
       </Paper>
       <Paragraph paragraphs={2} lines={5} />
       <Center>
         <Image width={250} height={250} />
       </Center>
-      <Paragraph paragraphs={0} lines={9} />
+      <Paragraph paragraphs={1} lines={9} />
     </Paper>
   </Container>
 ));

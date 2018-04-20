@@ -16,8 +16,8 @@ const size = ({ size = 1 }) => {
   `;
 };
 
-const H = ({ className, words = 1, size }) => (
-  <Paper className={className}>
+const H = ({ className, words = 1, size, center }) => (
+  <Paper className={className} center>
     {range(0, words).map(k => (
       <Line
         key={`w${k}`}
@@ -27,12 +27,19 @@ const H = ({ className, words = 1, size }) => (
   </Paper>
 );
 
+const center = css`
+  justify-content: center;
+  align-items: center;
+`;
+
 export const Header = styled(H)`
   display: flex;
   flex-wrap: ${props => props.wrap && 'wrap'};
   flex-grow: 0;
   flex-shrink: 0;
   margin-bottom: ${rem(8)};
+
+  ${p => p.center && center};
 
   ${Line} {
     margin-right: ${rem(8)};
