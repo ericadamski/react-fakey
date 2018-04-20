@@ -1,5 +1,6 @@
+import { Paper } from './components/paper';
 import { Line } from './components/line';
-import { Column } from './components/column';
+import { Row } from './components/row';
 import { Header } from './components/header';
 import { Image } from './components/image';
 import { Input } from './components/input';
@@ -9,7 +10,8 @@ import { Textarea } from './components/textarea';
 
 export default {
   Line,
-  Column,
+  Paper,
+  Row,
   Header,
   Image,
   Input,

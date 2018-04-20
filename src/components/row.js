@@ -8,26 +8,14 @@ import rem from './utils/rem';
 import { Paper } from './paper';
 import { Line } from './line';
 
-const L = ({ className, items = 1 }) => (
+const R = ({ className, count = 1 }) => (
   <Paper className={className}>
-    {range(0, items).map(k => (
+    {range(0, count).map(k => (
       <Paper key={k}>
-        <Line width={2} />
         <Line width={random(20)} />
       </Paper>
     ))}
   </Paper>
 );
 
-export const List = styled(L)`
-  ${Paper} {
-    display: flex;
-
-    ${Line} {
-      &:first-child {
-        width: 1rem;
-        margin-right: ${rem(18)};
-      }
-    }
-  }
-`;
+export const Row = styled(R)``;

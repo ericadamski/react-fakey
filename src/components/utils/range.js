@@ -1,5 +1,5 @@
 export default function range(start, end) {
-  return Array(end - start + 1)
+  return Array(Math.max(0, end - start))
     .fill()
     .map((e, i) => start + i);
 }
